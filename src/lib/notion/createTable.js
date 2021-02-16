@@ -8,6 +8,8 @@ const {
 } = require('./server-constants')
 
 async function main() {
+  console.log(BLOG_INDEX_ID)
+  console.log(NOTION_TOKEN)
   const userId = await getUserId()
   const transactionId = () => uuid()
   const collectionId = uuid()
